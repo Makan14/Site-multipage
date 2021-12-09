@@ -574,16 +574,279 @@ button{
     padding: 0;   
 }
 
-#zoning5 section .zone1,
-#zoning5 section .zone2,
-#zoning5 section .zone3,
-#zoning5 section .zone4{
+
+#zoning5 .zone .zone2,
+#zoning5 .zone .zone3{
     background-color: #D6BC6B;
     width: 50%;
+    height: 150px;
+}
+
+#zoning5 .zone .zone1,
+#zoning5 .zone .zone4{
+    background-color: brown;
+    width: 50%;
+    height: 150px;
+}
+
+.zone{
+    display: flex;
+    margin: 0 20px;
+}
+
+footer{
+    height: 50px;
+    background: yellow;
+}
+
+/*************ZONING 6**********/
+/*
+header : #40a497
+.haut1 : #203562
+.haut2 : #3E588F
+.haut3 : #203562
+nav : #0B5269
+aside : #446878
+slideshow : #314A52
+.a, .c, .e : #C0C5CD
+.b, .d, .f : #203562
+footer : #0B5269
+*/
+#zoning6{
+    color: white;
+    width: 960px;
+    text-align: center;
+}
+
+#zoning6 header{
+    background: #40a497;
+    display: flex;
+}
+
+#zoning6 header .haut1{
+    background: #203562;
+    width: 230px;
+}
+#zoning6 header .haut2{
+    background: #3E588F;
+    width: 500px;
+    
+}
+#zoning6 header .haut3{
+    background: #203562;
+    width: 230px;
+}
+
+nav{
+    height: 30px;
+    background: #0B5269;
+}
+
+#zoning6 section .a, .b{
+    display: flex;
+}
+
+#zoning6 section .zoneGauche{
+    background: #446878;
+    width: 100px;
+    height: 400px;
+}
+
+#zoning6 .a{
+    background: #C0C5CD;
+    width: 200px;
     height: 250px;
 }
 
-#zoning5 section .zone1,
-#zoning5 section .zone4{
-    
+#zoning6 .c ,.e{
+    background: #C0C5CD;
+    width: 150px;
+    height: 250px;
 }
+
+.b{
+    background:#203562;
+    width: 200px;
+    height: 250px;
+}
+
+.d, .f{
+    background:#203562;
+    width: 150px;
+    height: 250px;
+}
+
+.a, .b{
+    width: 200px;
+}
+
+.slideShow{
+    background: #314A52;
+    width: 300px;
+}
+
+#zoning6 footer{
+    background-color: #0b5269;
+    height: 50px;
+    color: white;
+}
+
+
+/************************FIN PAGE LISTE*************/
+ul.fruit{
+    list-style-type: none;
+}
+
+ul.fruit li{
+    display: inline;
+    margin: 15px;
+}
+
+li .fab{
+    font-size: 90%;
+    color: #32ff32;
+}
+
+li .fab:hover{
+    font-size: 120%;
+    color: darkred;
+}
+
+.imbriquee, .imbriquee ul{
+    padding-left: 15px;
+}
+
+.imbriquee{
+    cursor: pointer;
+}
+
+.imbriquee ul{
+    display: none;
+}
+
+.europe:hover ul, 
+.asie:hover ul{
+    display: block;
+}
+
+.imbriquee li ul li:hover{
+    font-size: 200%;
+    background-color: #e74c3c;
+    display: inline;
+    box-shadow: 5px 10px 10px grey;
+    transition-duration: 1s;
+}
+
+/************************FIN PAGE LISTE*************/
+
+
+/************************DEBUT LIENS MENU*************/
+/********** LIENS**********/
+
+.ancre{
+    text-align: center;
+}
+
+.ancre a{
+    margin: 8px;
+    padding: 5px 10px;
+    border-radius: 15px;
+    background-color: #2c3e50;
+    color: red;
+    text-decoration: none;
+    font-size: 20px;
+    box-shadow: 0 0 10px 3px black;
+    font-family: 'Poppins';
+}
+
+.ancre a:hover{
+    box-shadow: none;
+    transition: .5s;
+    text-shadow: 1px 5px 10px grey;
+}
+
+#lien a{
+    text-decoration: none;
+    color: rgb(87, 5, 5);
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+#lien a:hover{
+    color: #f16529;
+}
+
+/********** MENU**********/
+#menu nav{
+    background-color: transparent;
+    border: none;
+}
+
+#menu ul{
+    list-style-type: none;
+    text-align: center;
+}
+
+#menu ul li{
+    display: inline-block;
+}
+
+#menu nav a{
+    padding: 10px;
+    color: grey;
+    text-decoration: none;
+    background-color: #ddd;
+    transition: 1s ease-in; 
+}
+
+#menu nav a:hover{
+    color: #fff;
+    background-color: #069;
+}
+
+/***************MENU DEROULANT**************/
+#menuDeroulant{
+    height: 650px;
+}
+
+#menuDeroulant nav{
+    background-color: transparent;
+    border: none;
+    width: 90%;
+    margin: 0 auto;
+}
+
+#menuDeroulant nav ul li{
+    float: left;
+    list-style-type: none;
+    width: 20%;
+}
+
+#menuDeroulant ul ul{
+    display: none;
+}
+
+#menuDeroulant ul li ul li{
+    border-top: 1px solid red;
+    width: 100%;
+}
+
+#menuDeroulant nav li{
+    background-color: #ccc;
+}
+
+#menuDeroulant nav li a{
+    text-decoration: none;
+    color: #000;
+    padding: 4px 0 4px;
+    display: block;
+}
+
+#menuDeroulant ul{
+    text-align: center;
+}
+
+#menuDeroulant nav ul.niveau1 li.sousMenu:hover ul.niveau2{
+    display: block;
+}
+
