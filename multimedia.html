@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang='fr'>
+<head>
+  <meta charset='UTF-8'>
+  <meta name='viewport' content='width-device-width, initial-scale-1.0'>
+  <meta http-equiv='X-UA-Compatible' content='ie=edge'>
+  <meta name='description' content='Ma page multimedia en HTML'>
+  <meta name='author' content='Makan MACALOU'>
+  <meta name='keywords' content=', , , '>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300&family=Noto+Sans&family=Poppins:wght@200;300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel='stylesheet' href='css/style.css'>
+  <title>Multimédia</title>
+</head>
+<body>
+    <header>
+		<div id="logo">
+			<a href="#logo">
+				<button type="button">
+					<i class="fas fa-arrow-circle-up"></i>
+				</button>
+			</a>
+
+			<img src="img/logo.png" alt="css 3, html 5">
+		</div>
+
+		<div id="slogan">
+			<h1>Mon premier site HTML/CSS</h1>
+		</div>
+
+		<div id="social">
+			<a href="https://www.facebook.com/" target="_blank">
+				<i class="fab fa-facebook-square"></i>
+			</a>
+			<a href="http://www.instagram.com/" target="_blank">
+				<i class="fab fa-instagram-square"></i>
+			</a>
+		</div>
+
+        <div class="clear"></div>
+	</header>
+
+    <nav>
+        <div class="ancreNav">
+            <a href="text.html" >Texte</a>
+            <a href="index.html" >Structure</a>
+            <a href="selecteur.html">Sélecteurs</a>
+            <a href="image.html">Images</a>
+            <a href="position.html">Position</a>
+            <a href="tableau.html">Tableaux</a>
+            <a href="zoning.html" >Zoning</a>
+            <a href="listes.html" >Listes</a>
+            <a href="lien_menu.html" >Liens & menus</a>
+            <a href="formulaire.html" >Formulaires</a>
+            <a href="multimedia.html" class="activ">Multimédia</a>
+            <a href="animation.html">Animations</a>          
+        </div>
+    </nav>
+
+    <main>
+      <h2>multimédia</h2>
+
+      <section class="videoFond">
+          <h3>vidéo en fond</h3>
+
+          <div class="videoTexte">
+              <video autoplay loop>
+                  <source src="video/videoBackground.webm" type="video/webm">
+                  <source src="video/videoBackground.mp4" type="video/mdp4">
+              </video>
+
+              <p>
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloribus alias maxime, itaque reprehenderit repellendus assumenda porro quae vero at impedit expedita quia excepturi temporibus dolorum nobis, nihil neque incidunt a officiis molestias placeat non accusamus similique! Consequatur aperiam, fugit cumque possimus soluta corporis, corrupti sint sequi ab eaque esse exercitationem repellat fuga voluptate autem nisi temporibus praesentium dolores cupiditate distinctio? Repellendus quaerat perspiciatis ullam, similique placeat nemo modi repudiandae consectetur sit voluptas vero in natus.
+              </p>
+          </div>
+      </section>
+
+      <section>
+          <h3>vidéo youtube</h3>
+
+          <iframe width="560" height="315" src="https://www.youtube.com/embed/vKEZ2FHxWGU" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      </section>
+
+      <section class="audio">
+          <h3>audio</h3>
+
+          <h4>format mdp3</h4>
+          <br>
+          <audio src="audio/son.mp3" controls></audio>
+
+          <h4>format ogg</h4>
+          <br>
+          <audio src="audio/son.ogg" controls></audio>
+      </section>
+
+      <section>
+          <h3>google map</h3>
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d462560.301202552!2d54.947560722904974!3d25.076381466900905!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3e5f43496ad9c645%3A0xbde66e5084295162!2sDuba%C3%AF%20-%20%C3%89mirats%20arabes%20unis!5e0!3m2!1sfr!2sfr!4v1639126274853!5m2!1sfr!2sfr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      </section>
+    </main>   
+
+  <script src='js/script.js'></script>
+</body>
+</html>
